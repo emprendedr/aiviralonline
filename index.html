@@ -25,34 +25,20 @@
             padding: 1.5rem;
         }
 
-        /* ===== FONDO CON IMAGEN ACTUALIZADA ===== */
+        /* ===== FONDO SOLIDO PROFESIONAL (SIN IMAGEN DE FONDO) ===== */
         .hero-wrapper {
             max-width: 1280px;
             width: 100%;
             border-radius: 2.5rem;
-            background-image: url('18B6F5EA-4BDD-4973-806B-91859962DC21.png');
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
+            background: radial-gradient(circle at 20% 30%, #111827 0%, #07090e 90%);
             position: relative;
             isolation: isolate;
             box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.04);
             transition: all 0.3s ease;
         }
 
-        /* Overlay oscuro profesional para legibilidad */
-        .hero-wrapper::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: 2.5rem;
-            background: linear-gradient(135deg, rgba(7, 9, 14, 0.92) 0%, rgba(15, 23, 42, 0.88) 60%, rgba(7, 9, 14, 0.95) 100%);
-            z-index: 0;
-            pointer-events: none;
-        }
-
-        /* Contenedor interno (por encima del overlay) */
+        /* Contenedor interno */
         .card {
             position: relative;
             z-index: 1;
@@ -60,12 +46,12 @@
             width: 100%;
         }
 
-        /* ===== HEADER CON LOGO (SIN BADGE) ===== */
+        /* ===== HEADER CON LOGO ===== */
         .header {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             flex-wrap: wrap;
             gap: 1rem;
         }
@@ -75,8 +61,23 @@
             width: auto;
             max-width: 200px;
             object-fit: contain;
-            filter: brightness(0) invert(1); /* Si tu logo es oscuro, lo vuelve blanco. Si ya es claro, quita esto */
-            /* Si tu logo tiene colores específicos, elimina la línea de filter */
+            filter: brightness(0) invert(1); /* Si tu logo es oscuro, lo vuelve blanco. Si es claro, elimina esto */
+        }
+
+        /* ===== IMAGEN DESTACADA ARRIBA DEL TÍTULO ===== */
+        .content-hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 1.5rem;
+            margin-bottom: 1.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.7);
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .content-hero-image:hover {
+            transform: scale(1.01);
         }
 
         /* ===== GRID PRINCIPAL (2 COLUMNAS) ===== */
@@ -102,6 +103,7 @@
             letter-spacing: -0.02em;
             color: #ffffff;
             text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+            margin-top: -0.2rem;
         }
 
         .content h1 .accent {
@@ -417,9 +419,6 @@
             .hero-wrapper {
                 border-radius: 1.5rem;
             }
-            .hero-wrapper::before {
-                border-radius: 1.5rem;
-            }
             .card {
                 padding: 1.8rem;
             }
@@ -477,6 +476,10 @@
                 font-size: 1rem;
                 padding: 0.9rem 1rem;
             }
+            .content-hero-image {
+                border-radius: 1rem;
+                margin-bottom: 1.2rem;
+            }
         }
 
         /* ===== ANIMACIONES ===== */
@@ -523,7 +526,7 @@
     <div class="hero-wrapper">
         <div class="card">
 
-            <!-- ===== HEADER CON LOGO (SIN BADGE) ===== -->
+            <!-- ===== HEADER CON LOGO ===== -->
             <header class="header">
                 <img src="46EF7E14-7ECC-43AE-9397-2B8A89F64FA3.png" alt="Logo AIViralJobs" class="logo" />
             </header>
@@ -531,8 +534,11 @@
             <!-- ===== GRID PRINCIPAL ===== -->
             <div class="grid">
 
-                <!-- ===== COLUMNA IZQUIERDA ===== -->
+                <!-- ===== COLUMNA IZQUIERDA (CONTENIDO) ===== -->
                 <div class="content">
+
+                    <!-- ===== IMAGEN DESTACADA ARRIBA DEL TÍTULO ===== -->
+                    <img src="18B6F5EA-4BDD-4973-806B-91859962DC21.png" alt="Clase IA para Network Marketing" class="content-hero-image" />
 
                     <h1>
                         El 95% fracasa <br />
