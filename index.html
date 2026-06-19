@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clase Gratuita IA para MLM | 5% que triunfa</title>
-    <!-- Fuente elegante y moderna -->
+    <title>Clase IA para Network Marketing | 100+ emprendedores</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
     <style>
-        /* Reset y base */
+        /* ===== RESET Y BASE ===== */
         * {
             margin: 0;
             padding: 0;
@@ -16,86 +15,108 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #0b0d11;
+            background: #07090e;
             color: #e8edf2;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 1.5rem;
-            background-image: radial-gradient(circle at 20% 30%, #1a1f2a 0%, #0b0d11 80%);
+            background-image: radial-gradient(circle at 30% 20%, #141a26 0%, #07090e 90%);
         }
 
         .card {
-            max-width: 1120px;
+            max-width: 1280px;
             width: 100%;
-            background: rgba(18, 22, 30, 0.75);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: rgba(14, 18, 26, 0.8);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
             border-radius: 3rem;
-            padding: 2.5rem 3rem;
-            box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 215, 100, 0.08) inset;
-            border: 1px solid rgba(255, 215, 100, 0.10);
+            padding: 2.8rem 3.2rem;
+            box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 215, 100, 0.06) inset;
+            border: 1px solid rgba(255, 215, 100, 0.06);
             transition: all 0.3s ease;
         }
 
-        /* Layout de dos columnas en desktop */
+        /* ===== GRID PRINCIPAL ===== */
         .grid {
             display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 3rem;
-            align-items: center;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 3.5rem;
+            align-items: start;
         }
 
-        /* Columna izquierda: contenido */
+        /* ===== COLUMNA IZQUIERDA (CONTENIDO) ===== */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+        }
+
         .content h1 {
             font-size: 2.8rem;
             font-weight: 800;
             line-height: 1.1;
-            letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #f7e8b0 0%, #f0c94b 50%, #d9a82c 100%);
+            letter-spacing: -0.03em;
+            background: linear-gradient(135deg, #f7e8b0 0%, #f0c94b 45%, #d9a82c 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            margin-bottom: 1.2rem;
         }
 
-        .content .highlight {
-            font-size: 1.2rem;
+        .content .subhead {
+            font-size: 1.15rem;
             font-weight: 500;
-            color: #b9c4d4;
-            margin-bottom: 1.8rem;
-            line-height: 1.6;
-            border-left: 4px solid #f0c94b;
+            color: #cbd5e1;
+            line-height: 1.5;
+            border-left: 5px solid #f0c94b;
             padding-left: 1.2rem;
+            background: rgba(240, 201, 75, 0.03);
+            border-radius: 0 8px 8px 0;
         }
 
-        .benefits {
-            list-style: none;
-            margin: 2rem 0 2.2rem;
+        .content .subhead strong {
+            color: #f0c94b;
+            font-weight: 700;
+        }
+
+        .content .desc {
+            color: #a8b5cc;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-top: -0.5rem;
+        }
+
+        /* ===== BENEFICIOS (6 en grid 3x2) ===== */
+        .benefits-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem 1.5rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.8rem 1.5rem;
+            list-style: none;
+            margin: 0.5rem 0;
         }
 
-        .benefits li {
+        .benefits-grid li {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.6rem;
             font-weight: 500;
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #d6dfea;
-            transition: transform 0.2s;
+            transition: all 0.2s;
+            padding: 0.3rem 0.2rem;
+            border-bottom: 1px solid transparent;
         }
 
-        .benefits li:hover {
-            transform: translateX(6px);
+        .benefits-grid li:hover {
+            border-bottom-color: rgba(240, 201, 75, 0.2);
+            transform: translateX(4px);
         }
 
-        .benefits li svg {
+        .benefits-grid li svg {
             flex-shrink: 0;
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             fill: none;
             stroke: #f0c94b;
             stroke-width: 2.5;
@@ -103,74 +124,163 @@
             stroke-linejoin: round;
         }
 
-        .urgency {
-            display: inline-block;
-            background: rgba(240, 201, 75, 0.12);
-            border: 1px solid rgba(240, 201, 75, 0.25);
-            padding: 0.4rem 1.2rem;
-            border-radius: 100px;
-            font-size: 0.85rem;
-            font-weight: 600;
+        /* ===== SECCIÓN "DESCUBRIRÁS" ===== */
+        .discover-box {
+            background: rgba(240, 201, 75, 0.04);
+            border: 1px solid rgba(240, 201, 75, 0.08);
+            border-radius: 1.5rem;
+            padding: 1.5rem 1.8rem;
+            margin: 0.2rem 0;
+        }
+
+        .discover-box h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.8rem;
+            letter-spacing: -0.2px;
+        }
+
+        .discover-box h3 span {
             color: #f0c94b;
-            letter-spacing: 0.3px;
-            margin-top: 0.5rem;
         }
 
-        .urgency span {
-            background: #f0c94b;
-            color: #0b0d11;
-            padding: 0.1rem 0.7rem;
-            border-radius: 100px;
-            margin: 0 0.3rem;
-            font-weight: 800;
+        .discover-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem 1rem;
         }
 
-        /* Columna derecha: formulario */
+        .discover-grid p {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .discover-grid p strong {
+            color: #f0c94b;
+            font-weight: 600;
+        }
+
+        /* ===== TESTIMONIOS ===== */
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        .testi-card {
+            flex: 1 1 calc(33.33% - 1rem);
+            min-width: 150px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 1.2rem;
+            padding: 1rem 1.2rem;
+            backdrop-filter: blur(2px);
+            transition: all 0.25s;
+        }
+
+        .testi-card:hover {
+            background: rgba(255, 215, 100, 0.04);
+            border-color: rgba(255, 215, 100, 0.12);
+            transform: translateY(-3px);
+        }
+
+        .testi-card .stars {
+            color: #f0c94b;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.3rem;
+        }
+
+        .testi-card .quote {
+            font-size: 0.9rem;
+            color: #d6dfea;
+            line-height: 1.5;
+            font-style: italic;
+            margin-bottom: 0.4rem;
+        }
+
+        .testi-card .author {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #f7e8b0;
+        }
+
+        /* ===== COLUMNA DERECHA (FORM + STICKY) ===== */
+        .form-wrapper {
+            position: sticky;
+            top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
         .form-box {
-            background: rgba(12, 16, 24, 0.7);
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
+            background: rgba(10, 14, 22, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
             border-radius: 2rem;
             padding: 2.2rem 2rem;
-            border: 1px solid rgba(255, 215, 100, 0.15);
-            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 215, 100, 0.12);
+            box-shadow: 0 25px 50px -18px rgba(0, 0, 0, 0.8);
+            width: 100%;
+        }
+
+        .form-box .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(240, 201, 75, 0.10);
+            border: 1px solid rgba(240, 201, 75, 0.15);
+            border-radius: 100px;
+            padding: 0.3rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #f0c94b;
+            letter-spacing: 0.3px;
+            margin-bottom: 1rem;
         }
 
         .form-box h2 {
-            font-size: 1.6rem;
+            font-size: 1.7rem;
             font-weight: 700;
             color: #fff;
-            margin-bottom: 0.3rem;
+            line-height: 1.2;
+            margin-bottom: 0.2rem;
         }
 
         .form-box .sub {
             color: #aab5c9;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             margin-bottom: 1.8rem;
-            border-bottom: 1px dashed rgba(255, 215, 100, 0.2);
+            border-bottom: 1px dashed rgba(255, 215, 100, 0.10);
             padding-bottom: 1rem;
         }
 
         .form-group {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.1rem;
         }
 
         .form-group label {
             display: block;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            color: #aab5c9;
-            margin-bottom: 0.4rem;
+            color: #8f9bb3;
+            margin-bottom: 0.3rem;
         }
 
         .form-group input {
             width: 100%;
             padding: 0.9rem 1.2rem;
             border-radius: 1.2rem;
-            border: 1px solid #2a3140;
-            background: #131a24;
+            border: 1px solid #252e3e;
+            background: #0f141f;
             color: #fff;
             font-size: 1rem;
             font-family: 'Inter', sans-serif;
@@ -180,107 +290,125 @@
 
         .form-group input:focus {
             border-color: #f0c94b;
-            box-shadow: 0 0 0 4px rgba(240, 201, 75, 0.15);
-            background: #0f151f;
+            box-shadow: 0 0 0 4px rgba(240, 201, 75, 0.08);
+            background: #131a26;
         }
 
         .form-group input::placeholder {
-            color: #5f6b7e;
-            font-weight: 400;
+            color: #4d5a70;
         }
 
         .btn-primary {
             width: 100%;
-            padding: 1rem;
+            padding: 1rem 1.2rem;
             border: none;
             border-radius: 1.2rem;
             background: linear-gradient(135deg, #f7e8b0, #e5b83c);
             color: #0b0d11;
-            font-weight: 700;
+            font-weight: 800;
             font-size: 1.1rem;
             font-family: 'Inter', sans-serif;
             cursor: pointer;
             transition: all 0.25s;
-            box-shadow: 0 8px 24px -6px rgba(240, 201, 75, 0.25);
-            letter-spacing: 0.3px;
-            margin-top: 0.5rem;
+            box-shadow: 0 8px 28px -8px rgba(240, 201, 75, 0.3);
+            letter-spacing: 0.2px;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 0.6rem;
+            margin-top: 0.3rem;
         }
 
         .btn-primary:hover {
             transform: scale(1.02);
-            box-shadow: 0 12px 32px -6px rgba(240, 201, 75, 0.45);
+            box-shadow: 0 12px 40px -6px rgba(240, 201, 75, 0.5);
             background: linear-gradient(135deg, #fcefc0, #ecc44a);
         }
 
         .btn-primary:active {
-            transform: scale(0.98);
+            transform: scale(0.97);
         }
 
-        .small-note {
-            font-size: 0.75rem;
-            color: #6f7b91;
+        .form-footer {
+            font-size: 0.7rem;
+            color: #5f6b7e;
             text-align: center;
             margin-top: 1.2rem;
-            border-top: 1px solid #1e2632;
+            border-top: 1px solid #1a212e;
             padding-top: 1.2rem;
+            line-height: 1.5;
         }
 
-        .small-note strong {
+        .form-footer strong {
             color: #f0c94b;
             font-weight: 600;
         }
 
-        /* Contador de plazas (simulado) */
-        .counter {
+        /* ===== CONTADOR DE URGENCIA ===== */
+        .counter-box {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.8rem;
-            background: rgba(240, 201, 75, 0.06);
+            gap: 0.6rem;
+            background: rgba(240, 201, 75, 0.05);
             border-radius: 100px;
             padding: 0.5rem 1.2rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(240, 201, 75, 0.10);
+            border: 1px solid rgba(240, 201, 75, 0.08);
+            margin: 0.5rem 0 1rem 0;
         }
 
-        .counter .num {
+        .counter-box .num {
             font-weight: 800;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             color: #f0c94b;
         }
 
-        .counter .label {
+        .counter-box .label {
             font-size: 0.8rem;
             color: #b9c4d4;
             font-weight: 500;
         }
 
-        /* Responsive */
-        @media (max-width: 900px) {
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .card {
+                padding: 2rem;
+            }
+            .grid {
+                gap: 2.5rem;
+            }
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 850px) {
             .grid {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                gap: 2.5rem;
             }
-
+            .form-wrapper {
+                position: static;
+                order: 2;
+            }
+            .content {
+                order: 1;
+            }
             .card {
                 padding: 1.8rem;
                 border-radius: 2rem;
             }
-
             .content h1 {
                 font-size: 2.2rem;
             }
-
-            .benefits {
+            .testi-card {
+                flex: 1 1 100%;
+            }
+            .discover-grid {
                 grid-template-columns: 1fr;
             }
-
-            .form-box {
-                padding: 1.8rem;
+            .benefits-grid {
+                grid-template-columns: 1fr 1fr;
             }
         }
 
@@ -288,31 +416,32 @@
             .card {
                 padding: 1.2rem;
             }
-
             .content h1 {
                 font-size: 1.8rem;
             }
-
-            .content .highlight {
+            .content .subhead {
                 font-size: 1rem;
-                padding-left: 0.8rem;
             }
-
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-box {
+                padding: 1.5rem;
+            }
             .btn-primary {
-                font-size: 1rem;
+                font-size: 0.95rem;
                 padding: 0.9rem;
             }
         }
 
-        /* Animación sutil de entrada */
+        /* ===== ANIMACIONES ===== */
         .card {
-            animation: fadeUp 0.7s ease-out both;
+            animation: fadeUp 0.8s ease-out both;
         }
-
         @keyframes fadeUp {
             0% {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(35px);
             }
             100% {
                 opacity: 1;
@@ -320,43 +449,27 @@
             }
         }
 
-        /* Efecto máquina de escribir (solo CSS para demo) */
-        .typewriter {
-            display: inline-block;
-            overflow: hidden;
-            border-right: 3px solid #f0c94b;
-            white-space: nowrap;
-            animation: typing 2.5s steps(25) 0.5s forwards, blink 0.8s step-end infinite;
-            width: 0;
-            max-width: fit-content;
+        /* efecto sutil en testimonios */
+        .testi-card {
+            animation: floatIn 0.6s ease-out both;
         }
-
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-            to {
-                width: 100%;
-            }
+        .testi-card:nth-child(1) {
+            animation-delay: 0.1s;
         }
-
-        @keyframes blink {
-            0%,
+        .testi-card:nth-child(2) {
+            animation-delay: 0.25s;
+        }
+        .testi-card:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        @keyframes floatIn {
+            0% {
+                opacity: 0;
+                transform: translateY(15px);
+            }
             100% {
-                border-color: #f0c94b;
-            }
-            50% {
-                border-color: transparent;
-            }
-        }
-
-        /* Para pantallas pequeñas, el typewriter puede romperse, lo desactivamos */
-        @media (max-width: 600px) {
-            .typewriter {
-                white-space: normal;
-                border-right: none;
-                animation: none;
-                width: 100%;
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
@@ -366,100 +479,134 @@
     <div class="card">
         <div class="grid">
 
-            <!-- Columna izquierda: Contenido -->
+            <!-- ===== COLUMNA IZQUIERDA ===== -->
             <div class="content">
-                <h1>
-                    <span class="typewriter">¿Por qué el 95% fracasa?</span>
-                </h1>
-                <p class="highlight">
-                    Porque siguen métodos obsoletos.<br />
-                    <strong style="color:#f0c94b;">La IA cambió las reglas del juego.</strong>
+
+                <h1>🚀 Clase Gratuita de Inteligencia Artificial para Network Marketing</h1>
+
+                <div class="subhead">
+                    Descubre cómo la IA está transformando la forma de <strong>prospectar, vender y crecer</strong> en Network Marketing
+                </div>
+
+                <p class="desc">
+                    La mayoría de los emprendedores siguen utilizando métodos tradicionales que consumen tiempo y generan pocos resultados.<br />
+                    Mientras tanto, una nueva generación de líderes está aprovechando la Inteligencia Artificial para automatizar tareas, atraer más prospectos y construir sus negocios de manera más eficiente.
                 </p>
 
-                <ul class="benefits">
-                    <li>
-                        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        Más prospectos
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
-                        Seguimiento automático
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
-                        Más presentaciones
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 24 24"><path d="M20 12H4"/><path d="M12 4v16"/><circle cx="12" cy="12" r="10"/></svg>
-                        Más tiempo libre
-                    </li>
+                <!-- 6 Beneficios -->
+                <ul class="benefits-grid">
+                    <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Generar prospectos inteligente</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg> Automatizar seguimientos</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M4 4v16h16"/><polyline points="20 8 20 4 16 4"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="12" y2="16"/></svg> Contenido en minutos</li>
+                    <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Ahorrar tiempo repetitivo</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Aumentar conversaciones</li>
+                    <li><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg> Negocio escalable</li>
                 </ul>
 
-                <div class="urgency">
-                    ⏳ <span>47</span> plazas disponibles · Clase gratuita por tiempo limitado
+                <!-- Descubre -->
+                <div class="discover-box">
+                    <h3>📌 Lo que <span>descubrirás</span> en esta clase</h3>
+                    <div class="discover-grid">
+                        <p><strong>📲</strong> Crear contenido para FB, IG y TikTok con IA</p>
+                        <p><strong>🤖</strong> Automatizar tareas que consumen horas</p>
+                        <p><strong>🎯</strong> Generar más conversaciones con prospectos</p>
+                        <p><strong>🚀</strong> Posicionarte ante métodos tradicionales</p>
+                        <p><strong>💎</strong> Ahorrar tiempo mientras desarrollas tu negocio</p>
+                    </div>
                 </div>
+
+                <!-- Testimonios -->
+                <div class="testimonials">
+                    <div class="testi-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="quote">“Ahora tengo más conversaciones con prospectos sin pasar horas enviando mensajes.”</div>
+                        <div class="author">— Yveth</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="quote">“La IA me ayudó a crear contenido mucho más rápido y atraer más personas.”</div>
+                        <div class="author">— Ana</div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="quote">“Estoy automatizando tareas que antes me quitaban demasiado tiempo.”</div>
+                        <div class="author">— Juan</div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Columna derecha: Formulario -->
-            <div class="form-box">
-                <h2>Accede a la clase</h2>
-                <div class="sub">Aprende a posicionarte en el <strong style="color:#f0c94b;">5%</strong> que logra resultados extraordinarios.</div>
+            <!-- ===== COLUMNA DERECHA (STICKY) ===== -->
+            <div class="form-wrapper">
 
-                <!-- Contador visual de urgencia -->
-                <div class="counter">
-                    <span class="num" id="counterDisplay">47</span>
-                    <span class="label">plazas restantes</span>
+                <div class="form-box">
+                    <div class="badge">🔥 Más de 100 emprendedores ya están utilizando IA</div>
+
+                    <h2>Reserva tu acceso gratuito</h2>
+                    <div class="sub">Accede a esta clase sin costo y descubre cómo trabajar de manera más inteligente.</div>
+
+                    <!-- Contador urgencia -->
+                    <div class="counter-box">
+                        <span class="num" id="counterDisplay">37</span>
+                        <span class="label">plazas disponibles · ⏳ tiempo limitado</span>
+                    </div>
+
+                    <form id="captureForm" onsubmit="return handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" placeholder="Ej. Laura Gómez" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" placeholder="tu@mejornegocio.com" required />
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            👉 QUIERO MI ACCESO GRATUITO
+                        </button>
+                    </form>
+
+                    <div class="form-footer">
+                        ✅ Sin spam · Acceso inmediato · <strong>Cancelas cuando quieras</strong>
+                    </div>
                 </div>
 
-                <form id="captureForm" onsubmit="return handleSubmit(event)">
-                    <div class="form-group">
-                        <label for="name">Nombre completo</label>
-                        <input type="text" id="name" placeholder="Ej. Ana Martínez" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" placeholder="tu@email.com" required />
-                    </div>
-                    <button type="submit" class="btn-primary">
-                        🚀 Reserva tu acceso gratuito
-                    </button>
-                </form>
-
-                <div class="small-note">
-                    ✅ Sin spam · Acceso inmediato · <strong>Cancelas cuando quieras</strong>
+                <!-- Aviso legal dentro del wrapper (fuera de la caja) -->
+                <div style="font-size:0.65rem; color:#4d5a70; text-align:center; line-height:1.6; padding:0 0.5rem;">
+                    <strong style="color:#6f7b91;">Aviso Legal:</strong> Este sitio no forma parte de Facebook™, Instagram™, WhatsApp™ ni de Meta Platforms, Inc. Tampoco está respaldado, administrado ni asociado oficialmente con ninguna de estas plataformas.<br />
+                    © 2026 AIViralJobs. Todos los derechos reservados.
                 </div>
+
             </div>
 
         </div>
     </div>
 
     <script>
-        // Simulación de contador descendente (urgencia)
-        let counter = 47;
+        // ===== CONTADOR DE URGENCIA (simulado) =====
+        let counter = 37;
         const counterDisplay = document.getElementById('counterDisplay');
 
-        // Cada 5 segundos disminuye 1 (hasta 10)
         setInterval(() => {
-            if (counter > 10) {
+            if (counter > 8) {
                 counter--;
                 counterDisplay.textContent = counter;
             }
-        }, 5000);
+        }, 6000);
 
-        // Manejo del formulario (demo)
+        // ===== MANEJO DEL FORMULARIO =====
         function handleSubmit(e) {
             e.preventDefault();
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
 
             if (!name || !email) {
-                alert('Por favor, completa todos los campos.');
+                alert('⚠️ Por favor, completa todos los campos.');
                 return false;
             }
 
-            // Simulación de envío exitoso
-            alert(`✅ ¡Gracias ${name}! Revisa tu correo (${email}) para acceder a la clase.`);
-            // Aquí podrías redirigir a una página de agradecimiento o enviar a un CRM
+            // Simulación de éxito
+            alert(`🎉 ¡Gracias ${name}! Revisa tu correo (${email}) para acceder a la clase.`);
+            // Aquí puedes redirigir a tu página de agradecimiento:
             // window.location.href = 'gracias.html';
             return false;
         }
